@@ -14,7 +14,7 @@
     "test/**"
   ],
   "dependencies": {
-    "graphlib": "^1.0.5",
+    "graphlib-webpack": "^2.1.1",
     "lodash": "^3.10.0"
   }
 }
