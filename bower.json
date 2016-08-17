@@ -1,5 +1,5 @@
 {
-  "name": "dagre",
+  "name": "dagre-webpack",
   "version": "0.7.4",
   "main": "index.js",
   "ignore": [
