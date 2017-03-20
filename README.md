@@ -17,7 +17,16 @@ for details.
 
 ## Webpack Usage
 
-1. (Optional) In your webpack.config, expose `dagre-webpack` as `dagre`. This is a nicety that allows you to avoid calling `require('dagre-webpack')` on each page that needs it.
+1. Include the dagre-webpack bower component. I've only used the bower-webpack-plugin to do this e.g.
+
+```js
+new BowerPlugin({
+  modulesDirectories: ['..\..\bower_components'],
+  searchResolveModulesDirectories: false
+}),
+```
+  
+2. (Optional) In your webpack.config, expose `dagre-webpack` as `dagre`. This is a nicety that allows you to avoid calling `require('dagre-webpack')` on each page that needs it.
 
 ```js
 new webpack.ProvidePlugin({
@@ -27,7 +36,7 @@ new webpack.ProvidePlugin({
 });
 ```
     
-2. Instantiate your graph (assuming you completed step 1)
+3. Instantiate your graph (assuming you completed step 1)
 
 ```js
 var g = new dagre.graphlib.Graph();
