@@ -14,3 +14,25 @@ For more details, including examples and configuration options, please see our
 
 dagre is licensed under the terms of the MIT License. See the LICENSE file
 for details.
+
+## Webpack Usage
+
+1. (Optional) In your webpack.config, expose `dagre-webpack` as `dagre`. This is a nicety that allows you to avoid calling `require('dagre-webpack')` on each page that needs it.
+
+```js
+new webpack.ProvidePlugin({
+  ...
+  dagre: 'dagre-webpack'
+  ...
+});
+```
+    
+2. Instantiate your graph (assuming you completed step 1)
+
+```js
+var g = new dagre.graphlib.Graph();
+
+// Call g.SetEdge and g.SetNode and create your graph
+
+dagre.layout(g);
+```     
