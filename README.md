@@ -1,3 +1,4 @@
+Fork to Support Webpack
 # dagre - Graph layout for JavaScript
 
 [![Build Status](https://secure.travis-ci.org/cpettitt/dagre.png?branch=master)](http://travis-ci.org/cpettitt/dagre)
@@ -25,7 +26,7 @@ new BowerPlugin({
   searchResolveModulesDirectories: false
 }),
 ```
-  
+
 2. (Optional) In your webpack.config, expose `dagre-webpack` as `dagre`. This is a nicety that allows you to avoid calling `require('dagre-webpack')` on each page that needs it.
 
 ```js
@@ -35,7 +36,7 @@ new webpack.ProvidePlugin({
   ...
 });
 ```
-    
+
 3. Instantiate your graph (assuming you completed step 1)
 
 ```js
@@ -44,4 +45,4 @@ var g = new dagre.graphlib.Graph();
 // Call g.SetEdge and g.SetNode and create your graph
 
 dagre.layout(g);
-```     
+```
