@@ -1,6 +1,6 @@
 {
   "name": "periscope-dagre",
-  "version": "0.7.9",
+  "version": "1.0.0",
   "description": "Graph layout for JavaScript",
   "author": "Audrey McGowan <audreybmcgowan@gmail.com>",
   "main": "index.js",
