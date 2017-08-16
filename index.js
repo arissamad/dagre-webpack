@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 
 module.exports = {
-  graphlib: require("./lib/graphlib-webpack"),
+  graphlib: require("./lib/graphlib"),
 
   layout: require("./lib/layout"),
   debug: require("./lib/debug"),
